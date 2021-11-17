@@ -1,21 +1,26 @@
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class BankAccountTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void deposit() {
         fail("This test has yet to be implemented");
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void withdraw() {
         fail("This test has yet to be implemented");
-
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getBalance() {
         fail("This test has yet to be implemented");
+    }
 
+    @Test
+    void dummyTest() {
+        assertEquals(20, 21);
     }
 }
