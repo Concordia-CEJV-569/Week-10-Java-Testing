@@ -34,7 +34,11 @@ class BankAccountTest {
 
     @Test()
     public void withdraw_notBranch() throws Exception {
-        assertThrows(IllegalArgumentException.class, () -> account.withdraw(600.00, false));
+        assertThrows(
+                IllegalArgumentException.class,
+                () -> account.withdraw(600.00, false),
+                "Should throw an IllegalArgumentException"
+        );
 
 //        double balance = account.withdraw(600.00, false);
 //        assertEquals(400.00, balance, 0);
